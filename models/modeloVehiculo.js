@@ -20,3 +20,5 @@ const Vehiculo = new Schema({
         required:[true,'El valor diario es requerido'],
     }
 })
+
+export const modeloVehiculo = mongoose.model('vehiculos',Vehiculo)
