@@ -20,7 +20,6 @@ export class ControladorUsuario {
       let serviciousuario = new ServicioUsuario();
       let id = request.params.id;
       response.status(200).json({
-        estado: true,
         mensaje: "usuario por id",
         datos: await serviciousuario.buscarPorId(id),
       });
