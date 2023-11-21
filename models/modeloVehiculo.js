@@ -12,8 +12,9 @@ const Vehiculo = new Schema({
         required:[true,'La marca es requerida']
     },
     estado: {
-        type:Boolean,
-        default: true,
+        type:String,
+        required:[true,'El estado es requerido']
+        ,
     },
     valorDiario: {
         type:Number,

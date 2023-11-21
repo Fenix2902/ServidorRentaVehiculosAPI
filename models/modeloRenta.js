@@ -26,8 +26,7 @@ const Renta = new Schema({
     required: [true, "Fecha Final es requerida"],
   },
   estado: {
-    type: Boolean,
-    default: false,
+    type: String,
     required: [true, "Estado es requerido"],
   },
 });

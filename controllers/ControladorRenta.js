@@ -73,16 +73,15 @@ export class ControladorRenta {
   }
   async eliminar(request, response) {
     try {
-      let serviciorenta = ServicioRenta();
+      let serviciorenta = new ServicioRenta();
       //1. hay que recibir los datos del cliente (si)
       let id = request.params.id;
       //2. con los datos del cliente lo elimino de la bd
-      await serviciorenta.eliminar(id);
+      let respuesta = await serviciorenta.eliminar(id);
       //3. responde al cliente
       response.status(200).json({
-        
         mensaje: "eliminada renta ",
-        datos: id,
+        datos: respuesta,
       });
     } catch (error) {
       response.status(400).json({

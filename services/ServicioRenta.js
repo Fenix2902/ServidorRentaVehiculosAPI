@@ -1,4 +1,4 @@
-import {modeloRenta} from '../models/modeloRenta.js'
+import { modeloRenta } from "../models/modeloRenta.js";
 export class ServicioRenta {
   constructor() {}
 
